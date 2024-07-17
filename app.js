@@ -47,13 +47,15 @@ function getDominantFrequency(frequencyData, sampleRate) {
 
   doc = document.getElementById("body");
 
+  led = document.getElementById("light");
+
   if (frequency > 650 && frequency < 750){
     // stato di reset
     //doc.style="background-color: grey;";
-  }else if(frequency > 12000 && frequency < 15000){
-    doc.style="background-color: #FF6961;";
-  }else if(frequency > 15000 ){
-    doc.style="background-color: #80EF80;";
+  }else if(frequency > 12000 && frequency < 15000){ // red
+    led.src = "images/red.png";
+  }else if(frequency > 15000 ){ // green
+    led.src = "images/green.png";
   }
 
   return frequency;
