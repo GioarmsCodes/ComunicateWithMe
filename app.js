@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
            v = audioContext.createBiquadFilter();
            v.type = "highpass";
-           v.frequency.value = "10000";
+           v.frequency.value = "10000";       
 
           const analyser = audioContext.createAnalyser();
           const microphone = audioContext.createMediaStreamSource(stream);
