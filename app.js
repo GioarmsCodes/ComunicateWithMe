@@ -52,9 +52,9 @@ function getDominantFrequency(frequencyData, sampleRate) {
   if (frequency > 650 && frequency < 750){
     // stato di reset
     //doc.style="background-color: grey;";
-  }else if(frequency > 12000 && frequency < 15000){ // red
+  }else if(frequency > 3000 && frequency < 4000){ // red
     led.src = "images/red.png";
-  }else if(frequency > 15000 ){ // green
+  }else if(frequency > 7000 && frequency < 8000){ // green
     led.src = "images/green.png";
   }
 
